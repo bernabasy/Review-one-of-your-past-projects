@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Spartan:wght@500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-primary: hsl(300, 43%, 22%);
+  --color-primary-2: hsl(333, 80%, 67%);
+  --color-neutral: hsl(303, 10%, 53%);
+  --color-neutral-2: hsl(300, 24%, 96%);
+  --color-white: hsl(0, 0%, 100%);
+}
+body {
+  width: 70%;
+  max-width: 1440px;
+  height: 100vh;
+  background-color: var(--color-white);
+  background-image: url(/images/bg-pattern-top-desktop.svg),
+    url(/images/bg-pattern-bottom-desktop.svg);
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+}
+.container {
+  width: 100%;
+  max-width: 1090px;
+  height: 30vh;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container .text {
+  font-family: "Spartan";
+  font-size: medium;
+  color: var(--color-primary);
+}
+.container .text p {
+  font-size: 1rem;
+  color: var(--color-neutral);
+}
+.rating-items {
+  background-color: var(--color-neutral-2);
+  width: 420px;
+  height: 40px;
+  margin-top: 1rem;
+  padding: 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 3%;
+  font-family: "Spartan";
+}
+.rating-items .rating-texts p {
+  font-weight: bold;
+  font-size: 1rem;
+  color: var(--color-primary);
+}
+.item1 {
+  position: relative;
+  right: 40px;
+}
+.item3 {
+  position: relative;
+  left: 40px;
+  font-weight: bold;
+}
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 90%;
+  left: 25%;
+  font-family: "Spartan";
+  width: 100%;
+  max-width: 1200px;
+  margin-top: -200px;
+}
+.cards-container .title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-white);
+}
+.cards-container .title span {
+  color: var(--color-primary-2);
+  margin-top: 20px;
+}
+.cards-container .description {
+  color: var(--color-white);
+  font-size: 0.7rem;
+}
+.card-items {
+  background-color: var(--color-primary);
+  max-width: 720px;
+  max-height: 400px;
+  margin: 30px 20px;
+  padding: 30px 30px;
+  border-radius: 5%;
+}
+.image-container {
+  display: flex;
+}
+.card-img {
+  width: 46px;
+  border-radius: 50%;
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
+.card-item1 {
+  position: relative;
+  bottom: 20px;
+}
+.card-item3 {
+  position: relative;
+  top: 20px;
+}
+@media (max-width: 800px) {
+  .container {
+    display: block;
+    flex-direction: column;
+    position: relative;
+    margin-left: 60px;
+    margin-top: -60px;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+  }
+  .rating-items {
+    position: relative;
+    width: 100%;
+    align-items: center;
+    margin-left: -30px;
+    margin-top: 30px;
+  }
+  .item1 {
+    position: relative;
+    left: 40px;
+  }
+  .item2 {
+    position: relative;
+    left: 40px;
+  }
+  .item3 {
+    position: absolute;
+  }
+  .cards-container {
+    display: block;
+    margin-top: -220px;
+    margin-bottom: -20px;
+  }
+}
